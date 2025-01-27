@@ -1,3 +1,40 @@
+let mode = document.getElementById('darkmode');
+let body = document.getElementsByTagName('body')[0];
+let mainnav = document.getElementsByClassName('main-nav');
+let navlink = document.getElementsByClassName('navlinks');
+let logo = document.getElementsByClassName('logo');
+
+mode.addEventListener('click', function () {
+    if (body.style.backgroundColor === 'white' || body.style.backgroundColor === '') {
+        body.style.backgroundColor = 'black';
+        for (let i = 0; i < mainnav.length; i++) {
+            mainnav[i].style.backgroundColor = 'black';
+        }
+        for (let i = 0; i < navlink.length; i++) {
+            navlink[i].style.color = 'white';
+        }
+        for (let i = 0; i < logo.length; i++) {
+            logo[i].style.color = 'white';
+    } 
+    
+    }else {
+        body.style.backgroundColor = 'white';
+        for (let i = 0; i < mainnav.length; i++) {
+            mainnav[i].style.backgroundColor = 'white';
+        }
+        for (let i = 0; i < navlink.length; i++) {
+            navlink[i].style.color = 'black';
+        }
+        for (let i = 0; i < logo.length; i++) {
+            logo[i].style.color = 'black';
+        }
+    }
+});
+
+
+
+
+
 let ngoCount = 3; // Initial number of NGOs displayed
         const maxNgoCount = 30; // Maximum limit of NGOs
     
