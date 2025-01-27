@@ -1,3 +1,12 @@
+let audio = document.getElementById('background-audio');
+
+        document.body.addEventListener('click', function () {
+            audio.play().catch(error => {
+                console.error("Error playing audio:", error);
+            });
+        });
+
+
 let mode = document.getElementById('darkmode');
 let body = document.getElementsByTagName('body')[0];
 let mainnav = document.getElementsByClassName('main-nav');
@@ -9,6 +18,7 @@ mode.addEventListener('click', function () {
         body.style.backgroundColor = 'black';
         for (let i = 0; i < mainnav.length; i++) {
             mainnav[i].style.backgroundColor = 'black';
+            darkmode.textContent = 'Light Mode';
         }
         for (let i = 0; i < navlink.length; i++) {
             navlink[i].style.color = 'white';
@@ -17,10 +27,12 @@ mode.addEventListener('click', function () {
             logo[i].style.color = 'white';
     } 
     
+    
     }else {
         body.style.backgroundColor = 'white';
         for (let i = 0; i < mainnav.length; i++) {
             mainnav[i].style.backgroundColor = 'white';
+            darkmode.textContent = 'Dark Mode';
         }
         for (let i = 0; i < navlink.length; i++) {
             navlink[i].style.color = 'black';
@@ -65,7 +77,11 @@ let ngoCount = 3; // Initial number of NGOs displayed
         }
 
         // Add event listener for the search button
-document.querySelector('.main-nav .search-bar button').addEventListener('click', searchNGOs);
+document.querySelector('.main-nav .search-bar button').addEventListener('click', (event) =>{
+    if (event.key === 'Enter') {
+        searchNGOs();
+    }
+});
 
 // Add event listener for the "Enter" key in the search bar
 document.querySelector('.main-nav .search-bar input').addEventListener('keypress', (event) => {
@@ -73,6 +89,7 @@ document.querySelector('.main-nav .search-bar input').addEventListener('keypress
         searchNGOs();
     }
 });
+
 
 // Add event listener for restoring the page on mouse click
 document.addEventListener('click', (event) => {
