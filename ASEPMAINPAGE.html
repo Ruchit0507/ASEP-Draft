@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIT NGO Finder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="AsepCSS.css">
+    <script src="AsepJS.js"></script>
+</head>
+<body>
+    <header>
+        <!-- Upper Navigation Bar -->
+        <div class="upper-nav">
+            <div class="logo">Helping Hands</div>
+        </div>
+
+        <!-- Main Navigation Bar -->
+        <nav class="main-nav">
+            <a href="#" class="logo">NGO Finder</a>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search for NGOs, projects...">
+                <button>Search</button>
+            </div>
+
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Projects</a>
+                <a href="#footer-section">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Parallax Section -->
+    <div class="parallax">
+        <h1>Connecting You to the Right NGOs</h1>
+    </div>
+
+    <div class="ngo-cards" id="ngoCards">
+        <div class="ngo-card">
+            <a href="ngo1.html" target="_blank"><img  src="ngo1.jpg" alt="Ashray Initiative for Children">
+             <h3>Ashray Initiative for Children</h3>
+            <p>We provide free education to underprivileged children.</p></a>
+        </div>
+        <div class="ngo-card">
+            <a href="ngo2.html"><img src="ngo2.jpg" alt="IDEA">
+            <h3>IDEA</h3>
+            <p>Our mission is to provide medical care in remote areas.</p></a>
+        </div>
+        <div class="ngo-card">
+            <a href="ngo3.html"><img src="ngo3.jpg" alt="AERF">
+            <h3>Applied Environmental Research Foundation</h3>
+            <p>We focus on conservation and sustainable living.</p></a>
+        </div>
+    </div>
+
+    <div class="find-more">
+        <button onclick="addMoreNGOs()">Find More</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div id="footer-section">
+                <h4>About Us</h4>
+                <p>Helping Hands connects you with impactful organizations, making it easy to support, volunteer, or collaborate. Our platform bridges communities and causes, driving meaningful change together.</p>
+            </div>
+            <div id="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Get Involved</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div id="footer-section">
+                <h4>Follow Us</h4>
+                <ul class="social-media">
+                    <li><i class="fa-brands fa-facebook"></i><a href="#">  Facebook</a></li>
+                    <li><i class="fa-brands fa-twitter"></i><a href="#">  Twitter</a></li>
+                    <li><i class="fa-brands fa-square-instagram"></i><a href="#">  Instagram</a></li>
+                    <li><i class="fa-brands fa-linkedin"></i><a href="#">  LinkedIn</a></li>
+                </ul>
+            </div>
+            <div id="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: helpinghands24@gmail.com</p>
+                <p>Phone: 8805805661</p>
+                <p>Address: Plot No. 23, 2nd Floor, Sunrise Building,
+                    Near JM Road, Deccan Gymkhana,
+                    Pune - 411004, Maharashtra, India</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Helping Hands NGO</p>
+        </div>
+    </footer>
+    <script src="web3.js"></script>
+    
+
+</body>
+</html>
