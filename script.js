@@ -45,8 +45,6 @@ mode.addEventListener('click', function () {
 
 
 
-
-
 let ngoCount = 3; // Initial number of NGOs displayed
         const maxNgoCount = 30; // Maximum limit of NGOs
     
