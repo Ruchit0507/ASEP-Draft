@@ -1,10 +1,20 @@
-let audio = document.getElementById('background-audio');
+const audio = document.getElementById('background-audio');
+const muteButton = document.getElementById('mute-button');
+const muteIcon = muteButton.querySelector('i'); // Select the icon inside the button
 
-        document.body.addEventListener('click', function () {
-            audio.play().catch(error => {
-                console.error("Error playing audio:", error);
-            });
+// Function to toggle mute/unmute
+muteButton.addEventListener('click', function () {
+    if (audio.paused || audio.muted) {
+        audio.muted = false;
+        audio.play().catch(error => {
+            console.error("Error playing audio:", error);
         });
+        muteIcon.classList.replace("fa-volume-xmark", "fa-volume-up"); // Change to unmute icon
+    } else {
+        audio.muted = true;
+        muteIcon.classList.replace("fa-volume-up", "fa-volume-xmark"); // Change to mute icon
+    }
+});
 
 
 let mode = document.getElementById('darkmode');
