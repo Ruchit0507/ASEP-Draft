@@ -85,7 +85,7 @@ let ngoCount = 3; // Initial number of NGOs displayed
         }
 
         // Add event listener for the search button
-document.querySelector('.main-nav .search-bar button').addEventListener('click', (event) =>{
+    document.querySelector('.main-nav .search-bar button').addEventListener('click', (event) =>{
     if (event.key === 'Enter') {
         searchNGOs();
     }
