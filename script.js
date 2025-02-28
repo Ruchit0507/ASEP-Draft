@@ -75,7 +75,7 @@ function addMoreNGOs() {
   for (let i = 0; i < 3 && ngoCount < maxNgoCount; i++) {
     ngoCards.innerHTML += newNgo;
     ngoCount++;
-  }
+  }  // Adds up to 3 new NGO cards while keeping the count below maxNgoCount
 
   if (ngoCount >= maxNgoCount) {
     document.querySelector(".find-more button").disabled = true;
@@ -128,6 +128,7 @@ function searchNGOs() {
   ngoCards.forEach((card) => {
     const ngoName = card.querySelector("h3").textContent.toLowerCase();
 
+
     if (ngoName.includes(searchValue) && searchValue !== "") {
       // Show and highlight the matched NGO
       card.style.display = "block"; // Ensure it's visible
@@ -172,47 +173,47 @@ function addMoreNGOs() {
 
   const moreNGOs = [
     {
-        link: "./ngo4.html",
+      link: "./ngo4.html",
       img: "ngo4.jpg",
       name: "Akshar Paul",
       description:
         "Empowering underprivileged children with education and healthcare.",
     },
     {
-        link: "./ngo5.html",
+      link: "./ngo5.html",
       img: "ngo5.jpg",
       name: "Ghar",
       description:
         "Creating solutions for poverty alleviation through reuse of urban surplus.",
     },
     {
-        link: "./ngo6.html",
+      link: "./ngo6.html",
       img: "ngo6.jpg",
       name: "Parisar",
       description:
         "Ensuring happy and healthy childhoods through rights and education.",
     },
     {
-        link: "./ngo7.html",
+      link: "./ngo7.html",
       img: "ngo7.jpg",
       name: "Green Sunrise Hill",
       description: "Providing care and support to the elderly across India.",
     },
     {
-        link: "./ngo8.html",
+      link: "./ngo8.html",
       img: "ngo8.jpg",
       name: "Navkshitij",
       description:
         "Improving the quality of education for underprivileged children.",
     },
     {
-        link: "./ngo9.html",
+      link: "./ngo9.html",
       img: "ngo9.jpg",
       name: "Samavedana",
       description: "Serving millions of school children with mid-day meals.",
     },
     {
-        link: "./ngo10.html",
+      link: "./ngo10.html",
       img: "ngo10.jpg",
       name: "Kshitij Foundation",
       description:
