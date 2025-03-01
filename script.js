@@ -175,14 +175,14 @@ function addMoreNGOs() {
     {
       link: "./ngo4.html",
       img: "ngo4.jpg",
-      name: "Akshar Paul",
+      name: "Ghar",
       description:
         "Empowering underprivileged children with education and healthcare.",
     },
     {
       link: "./ngo5.html",
       img: "ngo5.jpg",
-      name: "Ghar",
+      name: "Akshar Paul",
       description:
         "Creating solutions for poverty alleviation through reuse of urban surplus.",
     },
